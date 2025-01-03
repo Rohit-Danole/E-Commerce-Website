@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puma</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="bg-light py-3">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="#" class="navbar-brand">
+            <img src="logo.png" alt="Logo" width="100" />
+          </a>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="d-flex align-items-center">
+            <input type="text" class="form-control me-2" placeholder="Search" />
+            <a href="#" class="btn btn-outline-dark me-2">Login</a>
+            <a href="#" class="btn btn-dark">Cart (0)</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero bg-dark text-white text-center py-5">
+      <div class="container">
+        <h1 class="display-4">Welcome to Puma Store</h1>
+        <p class="lead">Discover the latest trends and exclusive deals.</p>
+        <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="products py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Featured Products</h2>
+
+        <div class="filter-container text-center mb-4">
+          <div class="dropdown">
+            <button
+              class="btn btn-outline-dark dropdown-toggle"
+              type="button"
+              id="filterDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Filter by Category
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+              <li>
+                <a class="dropdown-item" href="#" onclick="filterItems('all')"
+                  >All</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="filterItems('shoes')"
+                  >Shoes</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="filterItems('sneakers')"
+                  >Sneakers</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 mb-4 item shoes">
+            <div class="card">
+              <div class="position-relative">
+                <img src="product1.jpg" class="card-img-top" alt="Product 1" />
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2"
+                  >24% OFF</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Hypnotic Res Unisex Sneakers</h5>
+                <p class="card-text">
+                  <li>Style: 402210_02</li>
+                  <li>Color: PUMA White-Cool Mid Gray-PUMA Black</li>
+                  <b style="color: red">Price:$19.99</b>&nbsp;&nbsp;<del>$25.99</del>
+                </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 item shoes">
+            <div class="card">
+              <div class="position-relative">
+                <img src="product2.jpg" class="card-img-top" alt="Product 1" />
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2"
+                  >23% OFF</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Rebound Future EVO Core Res Unisex Sneakers
+                </h5>
+                <p class="card-text">
+                  <li>Style: 402205_01</li>
+                  <li>Color: PUMA Black-Warm Earth-Strong Gray</li>
+                  <b style="color: red">Price:$25.99</b>&nbsp;&nbsp;<del>$31.99</del>
+                </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 item shoes">
+            <div class="card">
+              <div class="position-relative">
+                <img src="product3.jpg" class="card-img-top" alt="Product 1" />
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2"
+                  >15% OFF</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">VITORIA FG/AG Men's Football Boots</h5>
+                <p class="card-text">
+                  <li>Style: 107483_05</li>
+                  <li>Color: PUMA Black-Luminous Blue</li>
+                  <b style="color: red">Price:$39.99</b> &nbsp;&nbsp;<del>$45.99</del>
+                </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 item shoes">
+            <div class="card">
+              <div class="position-relative">
+                <img src="product4.jpg" class="card-img-top" alt="Product 1" />
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2"
+                  >22% OFF</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  PUMA Surgestride Men's Training Shoes
+                </h5>
+                <p class="card-text">
+                  <li>Style: 311127_01</li>
+                  <li>Color: Blue Horizon-PUMA White-PUMA Black</li>
+                  <b style="color: red">Price:$35.99</b> &nbsp;&nbsp;<del>$44.99</del>
+                </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4 item sneakers">
+            <div class="card">
+              <div class="position-relative">
+                <img src="product5.jpg" class="card-img-top" alt="Product 1" />
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2"
+                  >8% OFF</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">PUMA 1948 Mid Unisex Sneakers</h5>
+                <p class="card-text">
+                  <li>Style: 107483_02</li>
+                  <li>Color: white-black</li>
+                  <b style="color: red">Price:$45.99</b> &nbsp;&nbsp;<del>$48.99</del>
+                </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4 item sneakers">
+            <div class="card">
+              <div class="position-relative">
+                <img src="product6.jpg" class="card-img-top" alt="Product 1" />
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2"
+                  >9% OFF</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Smashic Unisex Sneakers</h5>
+                <p class="card-text">
+                  <li>Style: 107483_02</li>
+                  <li>Color: PUMA White-Matte Silver</li>
+                  <b style="color: red">Price:$45.99</b> &nbsp;&nbsp;<del>$48.99</del>
+                </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4 item shoes">
+            <div class="card">
+              <div class="position-relative">
+                <img src="product7.jpg" class="card-img-top" alt="Product 1" />
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2"
+                  >5% OFF</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  PUMA Questblitz Mid Men's Running Shoes
+                </h5>
+                <p class="card-text">
+                  <li>Style: 107483_02</li>
+                  <li>Color: Filtered Ash-PUMA Black-Hot Heat</li>
+                  <b style="color: red">Price:$35.99</b> &nbsp;&nbsp;<del>$38.99</del>
+                </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4 item sneakers">
+            <div class="card">
+              <div class="position-relative">
+                <img src="product8.jpg" class="card-img-top" alt="Product 1" />
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2"
+                  >8% OFF</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Court Classic Res Men's Sneakers</h5>
+                <p class="card-text">
+                  <li>Style: 107483_02</li>
+                  <li>Color: PUMA White-Chestnut Brown-PUMA Gold</li>
+                  <b style="color: red">Price:$45.99</b>&nbsp;&nbsp; <del>$48.99</del>
+                </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4 item sneakers">
+            <div class="card">
+              <div class="position-relative">
+                <img src="product9.jpg" class="card-img-top" alt="Product 1" />
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2"
+                  >10% OFF</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Court Classic Res Men's Sneakers</h5>
+                <p class="card-text">
+                  <li>Style: 107483_02</li>
+                  <li>Color: PUMA White-Vine-PUMA Gold</li>
+                  <b style="color: red">Price:$45.99</b> &nbsp;&nbsp;<del>$48.99</del>
+                </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4 item shoes">
+            <div class="card">
+              <div class="position-relative">
+                <img src="product10.jpg" class="card-img-top" alt="Product 1" />
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2"
+                  >8% OFF</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  ForeverRun NITRO™ Men's Running Shoes
+                </h5>
+                <p class="card-text">
+                  <li>Style: 107483_02</li>
+                  <li>Color: Vapor Gray-Fizzy Apple-Nitro Blue</li>
+                  <b style="color: red">Price:$40.99</b>&nbsp;&nbsp; <del>$48.99</del>
+                </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4 item shoes">
+            <div class="card">
+              <div class="position-relative">
+                <img src="product11.jpg" class="card-img-top" alt="Product 1" />
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2"
+                  >15% OFF</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  KING ULTIMATE FG/AG Unisex Football Boots
+                </h5>
+                <p class="card-text">
+                  <li>Style: 107483_02</li>
+                  <li>Color: white-black</li>
+                  <b style="color: red">Price:$50.99</b>&nbsp;&nbsp; <del>$59.99</del>
+                </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4 item sneakers">
+            <div class="card">
+              <div class="position-relative">
+                <img src="product12.jpg" class="card-img-top" alt="Product 1" />
+                <span
+                  class="badge bg-danger position-absolute top-0 start-0 m-2"
+                  >8% OFF</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  MMQ Service Line Clyde Unisex Sneakers
+                </h5>
+                <p class="card-text">
+                  <li>Style: 107483_02</li>
+                  <li>Color: white</li>
+                  <b style="color: red">Price:$45.99</b> &nbsp;&nbsp;<del>$48.99</del>
+                </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-light py-4">
+      <div class="container text-center">
+        <p>&copy; 2023 E-Commerce Website. All rights reserved.</p>
+        <div>
+          <a href="#" class="me-3">Privacy Policy</a>
+          <a href="#" class="me-3">Terms of Service</a>
+          <a href="#" class="me-3">Contact Us</a>
+        </div>
+        <div class="social-icons mt-2">
+          <a href="#" class="me-2"
+            ><img src="facebook.png" alt="Facebook" width="30"
+          /></a>
+          <a href="#" class="me-2"
+            ><img src="twitter.png" alt="Twitter" width="30"
+          /></a>
+          <a href="#" class="me-2"
+            ><img src="instagram.png" alt="Instagram" width="30"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

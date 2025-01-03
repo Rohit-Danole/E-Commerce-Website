@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero {
+    background: url('hero-image.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .card {
+    transition: transform 0.2s;
+    position: relative;
+  }
+  
+  .badge {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+
+   .filter-container {
+    margin-bottom: 20px;
+  }
+
+  .filter-button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .filter-button:hover {
+    background-color: #0056b3;
+  }
+
+  .item {
+    display: none; 
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .item.shoes {
+    background-color: #f9f9f9;
+  }
+
+  .item.shirts {
+    background-color: #e9f7ff;
+  }
+
+  .item.accessories {
+    background-color: #fff7e9;
+  }
+
+  .item.show {
+    display: block; 
+  }
